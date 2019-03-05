@@ -20,3 +20,15 @@
   **java Test PrimalityTester primes(2,100)**
   
   The output of all prime numbers between 2 and 100 will be printed to the console, as well as a count of those primes.
+
+# PROGRAM CLASSES
+## PrimalityTester
+  The PrimalityTester class is dedicated to determining the primality of numbers through the declared methods.
+  
+  ## primes(int,int)
+  Returns a list of prime numbers between a declared lower and upper bound -- can be used with ".size" to return the count of
+  the discovered primes.
+  The first parameter is a lower-bound integer and the second parameter is an upper-bound integer used to declare a range of
+  integer numbers the user wishes to find the primes in-between (note: these bounds are inclusive).
+  
+  The Test.java class will return the list of prime numbers along with a count of how many prime numbers are found.

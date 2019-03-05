@@ -13,10 +13,10 @@
   To pass arguments to the Test program, simply state the class name as the first parameter and the method(along with arguments)
   as the second parameter as so:
   
-  java Test <Class Name> <Method with Arguments>
+  **java Test <Class Name> <Method with Arguments>**
   
   For example, to use the primes(int,int) method in PrimalityTester to find all primes between 2 and 100:
   
-  java Test PrimalityTester primes(2,100)
+  **java Test PrimalityTester primes(2,100)**
   
   The output of all prime numbers between 2 and 100 will be printed to the console, as well as a count of those primes.

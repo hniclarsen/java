@@ -25,7 +25,7 @@
 ## PrimalityTester
   The PrimalityTester class is dedicated to determining the primality of numbers through the declared methods.
   
-  ## primes(int,int)
+  ### primes(int,int)
   Returns a list of prime numbers between a declared lower and upper bound -- can be used with ".size" to return the count of
   the discovered primes.
   The first parameter is a lower-bound integer and the second parameter is an upper-bound integer used to declare a range of

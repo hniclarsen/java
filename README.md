@@ -32,3 +32,10 @@
   integer numbers the user wishes to find the primes in-between (note: these bounds are inclusive).
   
   The Test.java class will return the list of prime numbers along with a count of how many prime numbers are found.
+  
+  Example:
+  
+  **java Test PrimalityTester primes(2,100)**
+  
+  [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+  Number of primes: 25

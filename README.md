@@ -1,5 +1,5 @@
-### AUTHOR:  Heather N. Larsen
-### VERSION: 1.1    2019/03/04    18:33MST
+#### AUTHOR:  Heather N. Larsen
+#### VERSION: 1.1    2019/03/04    18:33MST
 
 # OVERVIEW
   The file Test.java, along with all other dependencies in this folder, will allow the user to test each of the programs in this

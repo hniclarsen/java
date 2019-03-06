@@ -48,14 +48,7 @@
   
   ### LinkedToken(T)
   This is the original constructor that will initialize the first token and consequentially the entire set. The parameter
-  tkn represents the token to be stored as the LinkedToken.
-  
-  **no test available**
-  
-  ### LinkedToken(T,int,Map<Integer,LinkedToken>,LinkedToken)
-  Stores the consequential tokens associated with the parent token which is created by the user. This method can only be
-  accessed by the original LinkedToken itself. All tokens following the initialization of the first must be created using
-  createNext(T) instead of creating new LinkedTokens outside of the program.
+  tkn represents the token to be stored as the LinkedToken. All following tokens in the set must be added through createNext(T).
   
   **no test available**
   

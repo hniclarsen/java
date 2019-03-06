@@ -69,6 +69,12 @@
   
   **no test available**
   
+  ### clearTokens(int)
+  Removes all tokens, starting at the specified index (idx) and following. I.e. all tokens before the index will remain
+  accessible.
+  
+  **no test available**
+  
   ### getNext()
   Returns the next token in the set based on the previous (calling) token.
   

@@ -70,7 +70,7 @@
   ### getNext()
   Returns the next token in the set based on the previous (calling) token.
   
-  **no test available*
+  **no test available**
   
   ## getPrev()
   Returns the previous token in the set based on the next (calling) token.

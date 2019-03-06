@@ -56,6 +56,20 @@ public class LinkedToken <T> {
     }
     //createNext(tkn)===========================================================
     /**
+     * Removes all tokens at the specified index and following.
+     * @param  idx  the index of the first token to be removed
+     */
+    public void clearTokens(int idx) {
+        LinkedToken curr = this;
+        tbl.remove(idx);
+        
+        while(curr.nxt != null) {
+            curr = curr.nxt;
+            tbl.remove(curr.getIndex());
+        }
+    }
+    //clearTokens(int)==========================================================
+    /**
      * Returns the next token based on the current token.
      * @return next LinkedToken
      */
@@ -103,7 +117,7 @@ public class LinkedToken <T> {
     public int getIndex() {
         return this.idx;
     }
-    //getIndex()=============================================================
+    //getIndex()================================================================
     /**
      * Returns a String representation of this token and all following tokens.
      * @return full String representation of this token and following tokens

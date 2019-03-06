@@ -37,9 +37,9 @@
   
   **java Test PrimalityTester primes(2,100)**
   
-  [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+  _[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]_
   
-  Number of primes: 25
+  _Number of primes: 25_
 
 ## LinkedToken
   The LinkedToken class is dedicated to storing a token that has an index and may have a preceding or following token. The 

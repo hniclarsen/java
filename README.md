@@ -49,14 +49,13 @@
   ### LinkedToken(T)
   This is the original constructor that will initialize the first token and consequentially the entire set. The parameter
   tkn represents the token to be stored as the LinkedToken. All following tokens in the set must be added through createNext(T).
-  It is **_highly_** recommended that the user calls createNext(T) from the last token in the set **_after_** finding the last 
-  LinkedToken through getLastToken().
   
   **no test available**
   
   ### createNext(T)
   Creates the next token in the sequence, linking it to the previous (calling) token. The parameter tkn represents the token
-  to be stored as the LinkedToken.
+  to be stored as the LinkedToken. It is **_highly_** recommended that the user calls createNext(T) from the last token in the 
+  set **_after_** finding the last LinkedToken through getLastToken().
   
   **WARNING: CAN BREAK THE LIST STRUCTURE IF CALLED FROM A TOKEN WHICH ALREADY HAS A NEXT TOKEN**
   

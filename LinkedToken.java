@@ -50,7 +50,7 @@ public class LinkedToken <T> {
      * Creates the next token.
      * @param  tkn  the next LinkedToken
      */
-    public void createNext(String tkn) {
+    public void createNext(T tkn) {
         LinkedToken next = new LinkedToken(tkn,idx+1,tbl,this);
         this.nxt = next;
     }
@@ -96,6 +96,14 @@ public class LinkedToken <T> {
         return tbl.get(idx);
     }
     //getToken(int)=============================================================
+    /**
+     * Returns an index for the token.
+     * @return the index
+     */
+    public int getIndex() {
+        return this.idx;
+    }
+    //getIndex()=============================================================
     /**
      * Returns a String representation of this token and all following tokens.
      * @return full String representation of this token and following tokens

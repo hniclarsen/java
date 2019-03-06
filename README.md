@@ -81,37 +81,37 @@
   
   **no test available**
   
-  ## getPrev()
+  ### getPrev()
   Returns the previous token in the set based on the next (calling) token.
   
   **no test available**
   
-  ## getLastToken()
+  ### getLastToken()
   Returns the last LinkedToken in the set.
   
   **no test available**
   
-  ## getLastIndex()
+  ### getLastIndex()
   Returns the index of the last LinkedToken in the set.
   
   **no test available**
   
-  ## getToken(int)
+  ### getToken(int)
   Returns the token associated to the provided index (idx) parameter stored on the table.
   
   **no test available**
   
-  ## getIndex()
+  ### getIndex()
   Returns the index of the current LinkedToken.
   
   **no test available**
   
-  ## iterateTokens()
+  ### iterateTokens()
   Returns a String comprised of the current LinkedToken and all next LinkedTokens.
   
   **no test available**
   
-  ## toString()
+  ### toString()
   Returns a String representation of the current token.
   
   **no test available**

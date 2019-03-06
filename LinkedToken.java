@@ -61,11 +61,21 @@ public class LinkedToken <T> {
      */
     public void clearTokens(int idx) {
         LinkedToken curr = this;
+        LinkedToken prev = curr.prv;
+        
         tbl.remove(idx);
+        if(prev != null) {
+            prev.nxt = null;
+            curr.prv = null;
+        }
         
         while(curr.nxt != null) {
+            prev = curr;
             curr = curr.nxt;
+            
             tbl.remove(curr.getIndex());
+            prev.nxt = null;
+            curr.prv = null;
         }
     }
     //clearTokens(int)==========================================================

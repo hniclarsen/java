@@ -17,7 +17,7 @@
   
   For example, to use the primes(int,int) method in PrimalityTester to find all primes between 2 and 100:
   
-  **java Test PrimalityTester primes(2,100)**
+  **java Test PrimalityTester listPrimes(2,100)**
   
   The output of all prime numbers between 2 and 100 will be printed to the console, as well as a count of those primes.
 
@@ -35,7 +35,7 @@
   
   Example:
   
-  **java Test PrimalityTester primes(2,100)**
+  **java Test PrimalityTester listPrimes(2,100)**
   
   _[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]_
   

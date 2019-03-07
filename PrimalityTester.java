@@ -20,9 +20,9 @@ public class PrimalityTester {
         List primes = Collections.synchronizedList(new LinkedList());
         // check each integer between val lo and hi for primality
         int k = 1;                              // for prime pattern incrementation
-        if(lo<=1) { lo = 2; }                   // n<2 is not prime
         if(lo<=2 && hi>=2) { primes.add(2); }   // 2 is prime
         if(lo<=3 && hi>=3) { primes.add(3); }   // 3 is prime
+        if(lo<=1) { lo = 5; }                   // n<2 is not prime
         for(int i = lo; i <= hi; i+=k) {
             // remove even numbers
             if(i%2==0) {

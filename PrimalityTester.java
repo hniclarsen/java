@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Class dedicated to determining the primality of numbers.
  * @author    Heather N. Larsen
- * @version   1.0    2019/03/04    18:11MST
+ * @version   2.0    2019/03/06    18:30MST
  */
 public class PrimalityTester {
     /**
@@ -19,17 +19,23 @@ public class PrimalityTester {
         // initialize a linked-list storage container for discovered primes
         List primes = Collections.synchronizedList(new LinkedList());
         // check each integer between val lo and hi for primality
-        for(int i = lo; i <= hi; ++i) {
+        int k = 1;
+        for(int i = lo; i <= hi; i+=k) {
             // skip 1 and 0 -- these are not prime
-            if(i == 1 || i == 0) {
+            if(i <= 1) {
+                continue;
+            }
+            // 1 < x <= 3 are prime
+            if(i <= 3) {
+                primes.add(i);
                 continue;
             }
             // assume i is prime unless proven otherwise
             boolean prime = true;
-            double half = (double)i/2;
-            // test multiplicands up to half of i (second half mirrors the first half)
+            double  sqr   = Math.sqrt((double)i);
+            // test multiplicands up to the sqrt of i (multiplication mirroring)
             // not necessary to test for multiplicand 1 as this is true for primes
-            for(int j = 2; j <= floor(half); ++j) {
+            for(int j = 2; j <= floor(sqr); ++j) {
                 double mltplr = (double)i/(double)j;
                 // test if the multiplier is an integer 
                 if(floor(mltplr) == mltplr) {
@@ -42,7 +48,14 @@ public class PrimalityTester {
             if(prime) {
                 // i passes primality check -- i is prime, add to container
                 primes.add(i);
+                if(k == 1 || k == 4) {
+                    k = 2;
+                }
+                else if(k == 2) {
+                    k = 4;
+                }
             }
+            else { k = 1; }
         }
         return primes;
     }
